@@ -1,0 +1,12 @@
+db:
+  ppro:
+    url: jdbc:mysql://cp01-map-event01.cp01.baidu.com:8366/jasmine_ppro?useUnicode=true&characterEncoding=GBK&autoReconnect=true&zeroDateTimeBehavior=convertToNull
+    username: aladdin
+    password: aladdin
+
+db:
+  ppro:
+    readonly:
+      url: jdbc:mysql://cp01-map-event01.cp01.baidu.com:8366/jasmine_ppro?useUnicode=true&characterEncoding=GBK&autoReconnect=true&zeroDateTimeBehavior=convertToNull
+      username: aladdin
+      password: aladdin

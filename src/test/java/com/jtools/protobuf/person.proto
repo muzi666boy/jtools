@@ -1,0 +1,24 @@
+syntax = "proto3";//指定版本，必须要写（proto3、proto2）
+option java_outer_classname="PersonProto";//类名
+
+//人员信息
+message Person{
+    int32 id=1;
+    string name=2;
+    string email=3;
+    PhoneType phoneType=4;
+    repeated PhoneNumber phones=5;//0~N个，即数组
+}
+
+//联系方式类型信息
+enum PhoneType {//枚举
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+}
+
+//联系方式信息
+message PhoneNumber {//子消息
+    string type = 1;
+    string number = 2 ;
+}
